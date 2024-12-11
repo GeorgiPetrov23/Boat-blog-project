@@ -1,0 +1,29 @@
+<form class="boat-form" method="POST">
+    <label for="name">Name of Boat:</label>
+    <input type="text" id="name" placeholder="Name Of Boat" #inputName>
+
+    <label for="companyName">Company Name:</label>
+    <input type="text" id="companyName" placeholder="Company Name" #inputCompany>
+
+    <label for="length">Length:</label>
+    <input type="number" id="length" placeholder="Length" #inputLength>
+
+    <label for="range">Range (at 5 kn):</label>
+    <input type="number" id="range" placeholder="Range" #inputRange>
+
+    <label for="rechargeTime">Recharge Time:</label>
+    <input type="number" id="rechargeTime"  placeholder="Recharge Time" #inputRecharge>
+
+    <label for="image">Image URL:</label>
+    <input type="url" id="image" placeholder="Image URL" #inputImage>
+
+    <div class="submit" (click)="getBoatData(inputName, inputCompany, inputLength, inputRange, inputRecharge, inputImage)" routerLink="/catalog">Add Boat</div>
+</form>
+
+
+<!-- Име на лодката
+Име на компанията производител на лодката
+Дължина
+Колко мили може да плава лодката на определена скорост
+Време за зареждане на батерията
+снимка на лодката(като линк) -->
